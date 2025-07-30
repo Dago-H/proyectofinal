@@ -8,7 +8,7 @@ pipeline{
     stages{
         stage('Checkout') {
             steps {
-                git branch: 'main', url: ''
+                git branch: 'main', url: 'https://github.com/Dago-H/proyectofinal.git'
             }
         }
 
