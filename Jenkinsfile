@@ -1,7 +1,7 @@
 pipeline{
     agent any
 
-    enviroment{
+    environment{
         IMAGE_NAME = 'proyectofinal'
         IMAGE_NAME_TEST = 'proyectofinaltesting'
         DOCKER_USERNAME = 'cursodvops'
