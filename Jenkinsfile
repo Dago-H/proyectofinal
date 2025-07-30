@@ -55,8 +55,8 @@ pipeline{
 
     post {
         failure {
-            mail to: EMAIL_TO
-                from: EMAIL_FROM
+            mail to: EMAIL_TO,
+                from: EMAIL_FROM,
                 subject: "Build Failed in Jenkins: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: "Something is wrong with the build. Please check the console output at ${env.BUILD_URL}" 
         }
